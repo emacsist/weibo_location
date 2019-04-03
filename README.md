@@ -15,5 +15,5 @@ create table wb_location (
 clickhouse
 
 ```sql
-create table wb_location (p_code Int32, p_name String, c_code Int32, c_name String)Engine=MergeTree ORDER BY p_code SETTINGS index_granularity = 8192;
+create table wb_location (p_code Int16, p_name String, c_code Int16, c_name String)Engine=MergeTree ORDER BY p_code SETTINGS index_granularity = 8192;
 ```
